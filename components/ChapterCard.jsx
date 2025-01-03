@@ -17,7 +17,7 @@ const ChapterCard = ({ chapter }) => {
           : summary.en}
       </p>
       <Link
-        href={`/chapters/${chapter_number}/${translation.replace(/\s+/g, "-")}`}
+        href={`/chapters/${chapter_number}`}
         className="inline-block px-4 py-2 border border-gray-600 rounded-lg hover:bg-gray-300 hover:text-black transition duration-300"
       >
         Explore

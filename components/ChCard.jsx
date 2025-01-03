@@ -1,5 +1,6 @@
-const ChCard = ({ ch }) => {
-  const { chapter_number, translation, verses_count, meaning, summary } = ch;
+const ChCard = ({ chapter }) => {
+  const { chapter_number, translation, verses_count, meaning, summary } =
+    chapter;
 
   return (
     <div className="p-4 sm:p-6 md:p-8 rounded-2xl shadow-2xl min-w-[90%] md:max-w-4xl mx-auto mt-10 border border-gray-800">

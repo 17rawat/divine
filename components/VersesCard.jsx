@@ -1,4 +1,9 @@
-const VersesCard = async ({ verses }) => {
+import { getVerses } from "@/lib/data";
+import Link from "next/link";
+
+const VersesCard = async ({ chapterNumber }) => {
+  const verses = await getVerses(chapterNumber);
+
   const final = [];
 
   verses.forEach((verse) => {
@@ -22,12 +27,16 @@ const VersesCard = async ({ verses }) => {
             key={item.verse}
             className="mb-6 border-b border-gray-800 pb-4 transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:shadow-lg"
           >
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
-              <p className="text-lg font-semibold sm:w-1/4">
-                Verse {item.verse}
-              </p>
-              <p className="text-lg sm:text-lg sm:w-3/4">{item.translation}</p>
-            </div>
+            <Link href={`/chapters/${chapterNumber}/verse/${item.verse}`}>
+              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <p className="text-lg font-semibold sm:w-1/4">
+                  Verse {item.verse}
+                </p>
+                <p className="text-lg sm:text-lg sm:w-3/4">
+                  {item.translation}
+                </p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
