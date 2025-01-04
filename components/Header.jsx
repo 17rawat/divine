@@ -10,10 +10,9 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <ScrollText className="h-6 w-6" />
+            <ScrollText className="h-6 w-6 text-orange-400" />
           </Link>
         </div>
-        <div className="flex gap-4"></div>
       </nav>
     </header>
   );

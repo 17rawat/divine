@@ -29,7 +29,7 @@ const VersesCard = async ({ chapterNumber }) => {
           >
             <Link href={`/chapters/${chapterNumber}/verse/${item.verse}`}>
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
-                <p className="text-lg font-semibold sm:w-1/4">
+                <p className="text-lg font-semibold sm:w-1/4 text-orange-400">
                   Verse {item.verse}
                 </p>
                 <p className="text-lg sm:text-lg sm:w-3/4">

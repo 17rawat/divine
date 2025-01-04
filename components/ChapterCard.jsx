@@ -5,7 +5,7 @@ const ChapterCard = ({ chapter }) => {
 
   return (
     <div className="border border-gray-800 rounded-lg shadow-md p-4 sm:p-6 m-2">
-      <h2 className="text-lg sm:text-xl font-semibold mb-2 text-white">
+      <h2 className="text-lg sm:text-xl font-semibold mb-2 text-orange-400">
         Chapter {chapter_number}: {translation}
       </h2>
       <p className="text-sm  mb-2">
@@ -18,7 +18,7 @@ const ChapterCard = ({ chapter }) => {
       </p>
       <Link
         href={`/chapters/${chapter_number}`}
-        className="inline-block px-4 py-2 border border-gray-600 rounded-lg hover:bg-gray-300 hover:text-black transition duration-300"
+        className="inline-block px-4 py-2 text-orange-400 border border-gray-600 rounded-lg hover:bg-gray-300 hover:text-black transition duration-300"
       >
         Explore
       </Link>
