@@ -1,5 +1,5 @@
 import { getChapter, getVerses } from "@/lib/data";
-import ChCard from "@/components/ChCard";
+import ChapterOverviewCard from "@/components/ChapterOverviewCard";
 import VersesCard from "@/components/VersesCard";
 
 import { Suspense } from "react";
@@ -12,7 +12,7 @@ const ChapterPage = async ({ params }) => {
 
   return (
     <div>
-      <ChCard chapter={chapter} />
+      <ChapterOverviewCard chapter={chapter} />
 
       <Suspense fallback={<VersesCardSkeleton />}>
         <VersesCard chapterNumber={chapterNumber} />

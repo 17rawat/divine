@@ -17,7 +17,7 @@ const AuthorCommentary = ({ verse }) => {
   return (
     <div className="m-5 sm:m-10">
       <select
-        className="w-full p-2 mb-4 rounded-lg text-black"
+        className="w-full p-2 mb-4 rounded-lg text-gray-800"
         onChange={handleAuthorChange}
         value={author}
       >

@@ -1,26 +1,41 @@
+import React from "react";
+import { Heart } from "lucide-react";
 import Link from "next/link";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row items-center justify-center py-6 w-full shrink-0 border-t border-gray-800">
-      <p className="text-sm mb-2 sm:mb-0">© 2024 Gita. All rights reserved.</p>
-      <nav className="sm:ml-4 flex gap-4 sm:gap-6 overflow-x-auto ">
-        <Link
-          className="text-sm hover:text-orange-400 transition-colors whitespace-nowrap"
-          href="/about"
-        >
-          About the Gita
-        </Link>
-
-        <Link
-          className="text-sm hover:text-orange-400 transition-colors whitespace-nowrap"
-          href="#"
-        >
-          Contact
-        </Link>
-      </nav>
+    <footer className="bg-orange-50 border-t border-orange-100">
+      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
+        <nav className="mb-6">
+          <ul className="flex flex-wrap justify-center gap-6 text-gray-600">
+            <li>
+              <Link href="/about" className="hover:text-orange-600">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/chapters" className="hover:text-orange-600">
+                Chapters
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide" className="hover:text-orange-600">
+                Guide
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-orange-600">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="flex items-center justify-center text-sm text-gray-600">
+          <span>Made with</span>
+          <Heart className="h-4 w-4 mx-1 text-orange-600" />
+          <span>for spiritual seekers</span>
+        </div>
+      </div>
     </footer>
   );
-};
-
-export default Footer;
+}

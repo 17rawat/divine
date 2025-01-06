@@ -1,6 +1,5 @@
 import ChapterCard from "@/components/ChapterCard";
 import { getAllChapters } from "@/lib/data";
-import { Suspense } from "react";
 
 const ChaptersPage = async () => {
   const chapters = await getAllChapters();

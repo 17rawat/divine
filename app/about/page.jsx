@@ -2,14 +2,14 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-2xl p-6 sm:p-8 shadow-lg">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-center text-orange-400">
+        <div className="rounded-2xl p-6 sm:p-8">
+          <h1 className="text-4xl sm:text-5xl  mb-6 text-center text-orange-900">
             The Bhagavad Gita
           </h1>
 
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl  mb-3 text-orange-800">
                 Sacred Dialogue
               </h2>
               <p className="text-base sm:text-lg leading-relaxed">
@@ -24,7 +24,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl  mb-3 text-orange-800">
                 Divine Wisdom
               </h2>
               <p className="text-base sm:text-lg mb-4">
@@ -39,9 +39,7 @@ const About = () => {
                   "Jnana (Knowledge)",
                 ].map((item, index) => (
                   <li key={index} className="p-4 rounded-lg">
-                    <h3 className="font-semibold text-orange-400 mb-2">
-                      {item}
-                    </h3>
+                    <h3 className=" text-orange-800 mb-2">{item}</h3>
                     <p>
                       {item === "Dharma (Duty)"
                         ? "Understanding one's purpose and responsibilities in life"
@@ -57,7 +55,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl  mb-3 text-orange-800">
                 Universal Message
               </h2>
               <p className="text-base sm:text-lg leading-relaxed">
@@ -72,7 +70,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl mb-3 text-orange-800">
                 Spiritual Practice
               </h2>
               <p className="text-base sm:text-lg leading-relaxed">
@@ -92,7 +90,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl  mb-3 text-orange-800">
                 Structure and Content
               </h2>
               <p className="text-base sm:text-lg mb-4">
@@ -103,9 +101,7 @@ const About = () => {
                 {["Chapters 1-6", "Chapters 7-12", "Chapters 13-18"].map(
                   (chapter, index) => (
                     <div key={index} className="p-4 rounded-lg">
-                      <h3 className="font-semibold text-orange-400 mb-2">
-                        {chapter}
-                      </h3>
+                      <h3 className=" text-orange-800 mb-2">{chapter}</h3>
                       <p>
                         {chapter === "Chapters 1-6"
                           ? "Focus on Karma Yoga and the nature of the self"
@@ -120,7 +116,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl mb-3 text-orange-800">
                 Key Teachings
               </h2>
               <ul className="space-y-4">
@@ -131,9 +127,7 @@ const About = () => {
                   "Self-Realization",
                 ].map((teaching, index) => (
                   <li key={index} className="p-4 rounded-lg">
-                    <h3 className="font-semibold text-orange-400 mb-2">
-                      {teaching}
-                    </h3>
+                    <h3 className=" text-orange-800 mb-2">{teaching}</h3>
                     <p>
                       {teaching === "Immortality of the Soul"
                         ? "The Gita teaches that the soul (Atman) is eternal and indestructible."
@@ -149,7 +143,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-orange-400">
+              <h2 className="text-2xl sm:text-3xl  mb-3 text-orange-800">
                 Conclusion
               </h2>
               <p className="text-base sm:text-lg leading-relaxed">
