@@ -12,9 +12,11 @@ export default function Header() {
           </div>
           <div className="flex items-center space-x-4">
             {/* <button className="p-2 rounded-md hover:bg-orange-100">
-              <Search className="h-5 w-5 text-orange-800" />
-            </button>
-            <button className="p-2 rounded-md hover:bg-orange-100">
+              <Link href="/learn" className="h-5 w-5 text-orange-800">
+                Learn
+              </Link>
+            </button> */}
+            {/* <button className="p-2 rounded-md hover:bg-orange-100">
               <BookOpen className="h-5 w-5 text-orange-800" />
             </button> */}
           </div>
