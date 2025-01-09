@@ -23,11 +23,11 @@ export default function Footer() {
                 Lectures
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/contact" className="hover:text-orange-600">
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="flex items-center justify-center text-sm text-gray-600">
