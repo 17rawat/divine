@@ -1,6 +1,6 @@
 import { ScrollText, Book, Headphones, Heart } from "lucide-react";
 import Link from "next/link";
-import VerseOfTheDay from "@/components/VerseOfTheDay";
+
 import FeatureCard from "@/components/FeatureCard";
 import Image from "next/image";
 import hero from "@/assets/hero.jpg";
@@ -8,7 +8,7 @@ import hero from "@/assets/hero.jpg";
 export default function Home() {
   return (
     <main className="bg-orange-50">
-      <section className="relative flex flex-col items-center justify-start pt-14 pb-20 min-h-[calc(100vh-3.5rem)]">
+      <section className="pt-14 pb-20 min-h-[calc(100vh-3.5rem)]">
         <Image
           src={hero}
           alt="Bhagavad Gita hero image"
@@ -46,17 +46,6 @@ export default function Home() {
               Listen to Lectures
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Verse of the Day Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-orange-900 text-center mb-8 sm:mb-12">
-            Verse of the Day
-          </h2>
-
-          <VerseOfTheDay />
         </div>
       </section>
 

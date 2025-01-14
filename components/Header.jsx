@@ -15,11 +15,12 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="p-2 rounded-md border border-orange-300 shadow-md hover:bg-orange-100 hover:shadow-lg transition-all">
-              <Link href="/learn" className="h-5 w-5 text-orange-800">
-                Donate
-              </Link>
-            </button>
+            <Link
+              href="/donate"
+              className="p-2 text-orange-800 rounded-md border border-orange-300 shadow-md hover:bg-orange-100 hover:shadow-lg transition-all "
+            >
+              Donate
+            </Link>
           </div>
         </div>
       </div>
