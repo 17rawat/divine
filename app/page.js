@@ -90,6 +90,7 @@ export default function Home() {
             href="/chapters"
             className="bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-orange-700 transition-colors inline-flex items-center justify-center gap-2 text-base sm:text-lg"
           >
+            <Book className="w-4 h-4 sm:w-5 sm:h-5" />
             Explore Chapters
           </Link>
         </div>

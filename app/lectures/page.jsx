@@ -2,6 +2,12 @@ import YogaCard from "@/components/YogaCard";
 
 import { spiritualPractices } from "@/lib/data";
 
+export const metadata = {
+  title: "Shrimad Bhagavad Gita - Explore Spritual Practices",
+  description:
+    "Explore the spiritual practices and teachings from the Shrimad Bhagavad Gita.",
+};
+
 const Lectures = () => {
   return (
     <div>

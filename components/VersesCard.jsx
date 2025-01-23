@@ -18,6 +18,7 @@ const VersesCard = async ({ chapterNumber }) => {
       });
     });
   });
+  // console.log(final);
 
   return (
     <div className="min-h-screen flex justify-center items-center p-6 mt-10 text-gray-800">

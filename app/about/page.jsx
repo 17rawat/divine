@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About the Bhagavad Gita",
+  description:
+    "Learn about the Bhagavad Gita, its teachings, and its relevance in the modern world.",
+};
+
 const About = () => {
   return (
     <div className="min-h-screen">

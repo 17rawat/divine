@@ -1,6 +1,10 @@
 import ChapterCard from "@/components/ChapterCard";
 import { getAllChapters } from "@/lib/data";
 
+export const metadata = {
+  title: "Shrimad Bhagavad Gita - Explore All Chapters",
+};
+
 const ChaptersPage = async () => {
   const chapters = await getAllChapters();
   return (
